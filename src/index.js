@@ -1,8 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+import { myName as magdaName } from './mySecondModule'
+import { showMyName } from './mySecondModule'
+import myOwnName from './defaultExport'
+import allSays,{ say1, say2, say3 } from './manyExports'
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+console.log(magdaName)
+
+showMyName()
+
+myOwnName()
+
+say1() 
+say2() 
+say3()
+
+console.log(allSays)
+
